@@ -1,20 +1,26 @@
 # ⚡ DSA-PrepMaster — 90-Day DSA Roadmap & Tracker
 
-A modern, dark-themed interactive roadmap designed to crack technical coding interviews in 90 days with **150 handpicked LeetCode questions** covering all major Data Structures & Algorithms topics.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-dsa--prepmaster.vercel.app-000?style=for-the-badge&logo=vercel&logoColor=white)](https://dsa-prepmaster.vercel.app/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-DSA--PrepMaster-181717?style=for-the-badge&logo=github)](https://github.com/Sujal00100/DSA-PrepMaster)
+[![Questions](https://img.shields.io/badge/Questions-150%20Curated-7C3AED?style=for-the-badge)](https://dsa-prepmaster.vercel.app/)
+
+> 🌐 **Live Website:** [https://dsa-prepmaster.vercel.app/](https://dsa-prepmaster.vercel.app/)
+
+A modern, dark-themed interactive roadmap designed to conquer technical coding interviews in 90 days with **150 handpicked LeetCode questions** covering all major Data Structures & Algorithms topics.
 
 ---
 
 ## ✨ Features
 
-- **🎯 150 Handpicked Questions**: Curated progression from Easy to Medium and Hard across all DSA topics (Arrays, Strings, Linked Lists, Trees, Heaps, Graphs, DP, Greedy, Intervals, Backtracking, and Bit Manipulation).
-- **🧠 Topic-Free Practice Mode**: Problem rows hide the topic and data structure so you practice identifying underlying algorithmic patterns cold—just like in real technical interviews.
+- **🎯 150 Handpicked Questions**: Curated progression from Easy to Medium and Hard across all DSA topics (Arrays, Strings, Linked Lists, Trees, Heaps, Graphs, Dynamic Programming, Greedy, Intervals, Backtracking, and Bit Manipulation).
+- **🧠 Topic-Free Practice Mode**: Problem rows hide the topic and data structure names so you practice identifying underlying algorithmic patterns cold—just like in real technical interviews.
 - **💡 On-Demand Pattern Hints**: Click **💡 Hint** on any question to reveal:
   - 🏷️ **Topic Name**
   - 🟣 **Core Algorithmic Pattern**
   - 🔵 **Step-by-Step Approach**
   - 🟡 **Key Aha! Insight**
 - **📊 Interactive Progress Dashboard**:
-  - Live animated SVG radial progress ring.
+  - Live animated SVG radial progress ring with real-time percentage.
   - Easy / Medium / Hard completion counters.
   - Dynamic Day Streak and auto-calculated Daily Goal.
 - **🌱🔥⚡ 3 Structured Phases**:
@@ -27,9 +33,14 @@ A modern, dark-themed interactive roadmap designed to crack technical coding int
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Live Demo & Usage
 
-No build tools or installation needed! Simply open `index.html` in any modern web browser:
+### 🌐 Access Online
+Use the tracker directly from any desktop or mobile browser at:  
+👉 **[https://dsa-prepmaster.vercel.app/](https://dsa-prepmaster.vercel.app/)**
+
+### 💻 Run Locally
+No build tools or installation needed! Simply clone and open `index.html`:
 
 ```bash
 # Clone the repository
@@ -57,12 +68,12 @@ DSA-PrepMaster/
 ├── style.css         # Dark theme, glassmorphism, animations & responsiveness
 ├── app.js            # 150 questions dataset, hint system & state logic
 ├── generate_app.py   # Python generator script for the dataset and hints
-└── README.md         # Documentation
+└── README.md         # Documentation with live links
 ```
 
 ---
 
-## 🏆 Daily Strategy
+## 🏆 90-Day Strategy
 
 1. Aim for **1 to 2 problems per day** following the sequential day schedule.
 2. Read the problem statement cold and try to identify the pattern before looking at the hint.

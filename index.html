@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSA Master — 90-Day Roadmap | 150 Questions</title>
+  <meta name="description" content="Master Data Structures and Algorithms in 90 days with 150 handpicked LeetCode questions. Track your progress, conquer every DSA topic." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <div class="logo-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <path d="M4 8L14 4L24 8V16C24 21 14 24 14 24C14 24 4 21 4 16V8Z" stroke="url(#lg1)" stroke-width="2" fill="none"/>
+            <path d="M10 13L13 16L18 11" stroke="url(#lg1)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs><linearGradient id="lg1" x1="4" y1="4" x2="24" y2="24" gradientUnits="userSpaceOnUse"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#06B6D4"/></linearGradient></defs>
+          </svg>
+        </div>
+        <span class="logo-text">DSA<span class="logo-accent">Master</span></span>
+      </div>
+      <div class="nav-stats">
+        <div class="nav-stat"><span class="nav-stat-val" id="navCompleted">0</span><span class="nav-stat-label">Done</span></div>
+        <div class="nav-stat-divider"></div>
+        <div class="nav-stat"><span class="nav-stat-val">150</span><span class="nav-stat-label">Total</span></div>
+      </div>
+      <button class="btn-reset" id="btnReset">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+        Reset
+      </button>
+    </div>
+  </nav>
+  <header class="hero">
+    <div class="hero-badge"><span class="badge-dot"></span>90-Day Challenge</div>
+    <h1 class="hero-title">Crack Every<br/><span class="gradient-text">DSA Interview</span></h1>
+    <p class="hero-subtitle">150 hand-picked LeetCode questions across every topic. Structured Easy → Medium → Hard to build skills progressively.</p>
+    <div class="progress-dashboard">
+      <div class="progress-card glass-card">
+        <div class="progress-ring-wrap">
+          <svg class="progress-ring" width="120" height="120" viewBox="0 0 120 120">
+            <circle class="ring-bg" cx="60" cy="60" r="50"/>
+            <circle class="ring-fill" cx="60" cy="60" r="50" id="progressRing"/>
+          </svg>
+          <div class="progress-ring-text">
+            <span class="ring-percent" id="ringPercent">0%</span>
+            <span class="ring-label">Complete</span>
+          </div>
+        </div>
+        <div class="progress-breakdown">
+          <div class="pb-item easy"><span class="pb-dot"></span><span class="pb-label">Easy</span><span class="pb-val" id="easyCount">0/50</span></div>
+          <div class="pb-item medium"><span class="pb-dot"></span><span class="pb-label">Medium</span><span class="pb-val" id="mediumCount">0/75</span></div>
+          <div class="pb-item hard"><span class="pb-dot"></span><span class="pb-label">Hard</span><span class="pb-val" id="hardCount">0/25</span></div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-box glass-card"><div class="stat-icon">🔥</div><div class="stat-number" id="streakDays">0</div><div class="stat-desc">Day Streak</div></div>
+        <div class="stat-box glass-card"><div class="stat-icon">📅</div><div class="stat-number" id="daysLeft">90</div><div class="stat-desc">Days Left</div></div>
+        <div class="stat-box glass-card"><div class="stat-icon">⚡</div><div class="stat-number" id="todayGoal">2</div><div class="stat-desc">Daily Goal</div></div>
+        <div class="stat-box glass-card"><div class="stat-icon">🗺️</div><div class="stat-number">3</div><div class="stat-desc">Phases</div></div>
+      </div>
+    </div>
+  </header>
+  <section class="filter-section">
+    <div class="filter-inner">
+      <div class="filter-label">Filter:</div>
+      <div class="filter-tabs" id="filterTabs">
+        <button class="filter-tab active" data-filter="all">All <span class="tab-count">150</span></button>
+        <button class="filter-tab" data-filter="easy">Easy <span class="tab-count easy-c">50</span></button>
+        <button class="filter-tab" data-filter="medium">Medium <span class="tab-count medium-c">75</span></button>
+        <button class="filter-tab" data-filter="hard">Hard <span class="tab-count hard-c">25</span></button>
+        <button class="filter-tab" data-filter="done">Done</button>
+        <button class="filter-tab" data-filter="pending">Pending</button>
+      </div>
+      <div class="search-wrap">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" class="search-input" id="searchInput" placeholder="Search questions..." />
+      </div>
+    </div>
+  </section>
+  <main class="questions-section">
+    <div id="questionsContainer"></div>
+  </main>
+  <div class="modal-overlay" id="congratsModal">
+    <div class="modal-card glass-card">
+      <div class="modal-emoji">🎉</div>
+      <h2 class="modal-title">You're Crushing It!</h2>
+      <p class="modal-sub">Keep up the momentum. Every solved problem brings you closer to your dream job!</p>
+      <button class="modal-close" id="modalClose">Continue →</button>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>Built for future engineers 🚀 — Practice daily, stay consistent.</span>
+      <div class="footer-links">
+        <a href="https://leetcode.com" target="_blank" rel="noopener">LeetCode</a>
+        <a href="https://neetcode.io" target="_blank" rel="noopener">NeetCode</a>
+        <a href="https://takeuforward.org" target="_blank" rel="noopener">TakeUForward</a>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
